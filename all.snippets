@@ -1,0 +1,9 @@
+global !p
+def today():
+	from datetime import date
+	return date.today().strftime("%Y-%m-%d")
+endglobal
+
+snippet today "today's date" w
+`!p snip.rv = today()`
+endsnippet
